@@ -13,6 +13,13 @@ body {
   color: #444444;
 }
 
+p{
+  font-size: 20px;
+}
+ul {
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: #67b0d1;
@@ -503,6 +510,8 @@ section {
 .about .content p {
   margin-bottom: 30px;
 }
+
+
 .about .content .about-btn {
   display: inline-block;
   background: #67b0d1;
@@ -547,6 +556,10 @@ section {
   .about {
     text-align: center;
   }
+}
+
+.about .container p{
+  font-size: 3000px;
 }
 
 /*--------------------------------------------------------------

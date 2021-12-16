@@ -127,7 +127,7 @@
               <h3> Abstract</h3>
               <p>Brexit was the withdrawal of the United Kingdom from the European Union. The United Kingdom is the first and so far the only member state to have left the EU, after 47 years of having been a part of the union. It is an event that has made people very vocal and different opinions have been shared, particularly in the media. In this project, we want to put this event under the microscope and investigate several aspects of it. First, we want to do a descriptive analysis: When did we start mentioning Brexit, which words are used the most in our database, which are the main authors of the quotes, which media have relayed the information the most, etc.</p>
               <h3> Datasets</h3>
-              We applied our data analysis on the following three datasets
+              <p>We applied our data analysis on the following three datasets</p>
               <ul>
            <li><a href="https://zenodo.org/record/4277311#.Ybr8Bywo9QI">Quotebank</a></li>
            <p> Quotebank is a dataset of 178 million unique, speaker-attributed quotations that were extracted from 196 million English news articles crawled from over 377 thousand web domains between August 2008 and April 2020. Our analysis only focus on Brexit related quotations, we only used datasets from 2015 to 2020 in Quotebank.
@@ -140,9 +140,9 @@
           <li><a href="https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv">
           ISO-3166-Countries-with-Regional-Codes</a></li>
           For map plotting, we need the ISO-3166 alpha‑3 codes for all countries. So we extract part of csv from the ISO-3166-Countries-with-Regional-Codes/all.csv file.
-          
+
           </ul>
-          
+
            <h3> Methods</h3>
            <ul>
               <li>Data Collection</li>
@@ -160,7 +160,7 @@
               You can find the first results, uncommented, of the cluster analysis at the end of this notebook
           </ul>
           </div>
-          
+
           </section>
       <!-- ======= END Introduction======= -->
 
@@ -172,23 +172,23 @@
                   <h2> I. Media's Coverage</h2>
                 </div>
                 <p>The original Quotebanks dataset contains 115,584,257 records. As described in the DataPreProcessing notebook, we initially extracted quotes that were solely about Brexit, the United Kingdom and/or the European Union. We then proceeded with filtering these records to consider only those containing one of the words from the following list: leave campaign and remain campaign, no deal, transition period, leave, withdral, referendum and split from as Brexit-related quotes.
-      
+
       As a result, we ended up with 101,878 Brexit-related citations for more in-depth analysis.</p>
-      
+
                   <!-- ======= Section I-2 ======= -->
                   <h2> When did the media start to mention Brexit?</h2>
-      
+
                   <div class="pngplot"><img src="plots/1_2.png" /></div>
-                    Always considering the filtered Quotebank data, the graph above represents the number of citations related to the Brexit over the years. We first notice that before 2015, only a few hundred citations were related to Brexit. This switches in 2016 - the year when the Brexit was voted- and we can see that until 2019, the number of citations will keep increasing until waiting for its peak. Yet in 2020, we witness a sharp drop. We suggest that this is because most news stories were relaying information about the coronavirus at that time. Another theory would be that the data was not completely extracted from year 2020.
-      
-      In order to further analyze this trend over the years, we look at what happens each year while looking at the dates that marked the Brexit.
-      
+                  <p>  Always considering the filtered Quotebank data, the graph above represents the number of citations related to the Brexit over the years. We first notice that before 2015, only a few hundred citations were related to Brexit. This switches in 2016 - the year when the Brexit was voted- and we can see that until 2019, the number of citations will keep increasing until waiting for its peak. Yet in 2020, we witness a sharp drop. We suggest that this is because most news stories were relaying information about the coronavirus at that time. Another theory would be that the data was not completely extracted from year 2020.
+
+      In order to further analyze this trend over the years, we look at what happens each year while looking at the dates that marked the Brexit.</p>
+
                   <!-- ======= Section I-3 ======= -->
-      
+
                   <h2> How did the number of quotations change over time? </h2>
-    
-      
-      
+
+
+
                   <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                       <iframe id="test" class="embed-responsive-item" src="plots/1_3_keydates_timeseries.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
@@ -207,7 +207,7 @@
                     <li> 16 October – Johnson backs away: after multiple events, Johnson says the UK should “go for the Australia solution” as he announced that it’s time to “get ready" for the prospect of no-deal Brexit.
                   </ul>
                   <a href=" https://www.theweek.co.uk/100284/brexit-timeline-key-dates-in-the-uk-s-break-up-with-the-eu"><em>Souce of above keydates</em></a><br>
-      
+
                   On the graph, we can see that before the vote on June 23, 2016, the number of citations was very limited. The number started to increase until July 13, 2016, the day Theresa May became PM, before dropping again and entering a stationary phase. We anticipated seeing more dramatic variations in the number of quotes tying in with these specific dates, though we must keep in mind that the plot only considers data from Quotebank, which may not represent what is actually shared by all media outlets.
             </div>
       </section>
@@ -217,9 +217,9 @@
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>II - Media views towards Brexit:</h2>
         </div>
-  
+
         <!-- <h2>II.1 Which media have relayed the information the most?</h2> -->
-  
+
         <div
           class="embed-responsive"
           style="height: 600px; pading: 1em;"
@@ -236,7 +236,7 @@
         </div>
         <section id="about">
             <div class="container">
-              
+
             <h3> Among the top medias we see:</h3>
              <ul>
                 <li>The Daily Express (here Express) and its sister paper - the Sunday Express are daily national middle-market and conservative tabloid newspapers in the United Kingdom.
@@ -247,12 +247,12 @@
                 <li>The Politico is a political journalism company based in Arlington County, Virginia, that covers politics and policy in the United States and internationally. It primarily distributes content online but also with printed newspapers, radio, and podcasts.</li>
                 <li>MSN.com is a visited portal website provided by Microsoft.</li>
                 <p>We will investigate/interested in looking at their emotion/view about the brexit later, most influencial media Sentiment Analysis</p>
-            
+
               </ul>
         </section>
 
         <!-- <h2>II.2 What is the country of origin of these media?</h2> -->
-  
+
         <div
           class="embed-responsive"
           style="height: 600px; pading: 1em;"
@@ -267,31 +267,31 @@
             width="100%"
           ></iframe>
         </div>
-        
+
         <section id="about">
             <div class="container">
-              
+
              <ul>
                 <p>Only looking at the domains we could find that most domains are based in UK as we expected.
                 Scrapping the web page to get the domain countries using beautiful soup for future analysis
               </p>
                     <li>Note that to decide to which country each domain is assigned, we used the link that can be not always reliable since some domains can use .com ... (write smt about this)</li>
-                  
-            
+
+
               </ul>
         </section>
 
- 
-  
+
+
         <!--
         <h2>
           II.3 What media and websites tend to have positive or negative
           statements towards the situation?
         </h2> -->
-  
+
         <div
           class="embed-responsive"
-          style="height: 600px; pading: 1em;"
+          style="height: 800px; pading: 1em;"
           id="lineChartEmbedDiv"
         >
           <iframe
@@ -303,18 +303,18 @@
             width="100%"
           ></iframe>
         </div>
-        
+
         <section id="about">
             <div class="container">
-  
+
             <p>We see that, when looking at the top 20 media present in the Quotebank data, most of them have a negative feeling about Brexit, independently about their views
                 Besides, most of these medieas are from uk, and hold mostly with negaattitudtive, espicially Daily Express(express.co.uk).
                 It s suprising that most of views are neg when the brexit was still voted yes but we have to keep in mind it doesnt reflect the opinion
             </p>
-          
+
         </section>
 
-  
+
         <!-- <h2>
           II.4 How sentiments of quotations revealed by top 10 medias change over
           recent years?
@@ -339,26 +339,26 @@
               <div class="container">
                   <p>We can see that generally, the propostion between negative, positive and neutral feeling stayed consistant throughout the years.
                  We can nonetheless notice again that the number of quotes in 2020 always drop.</p>
-            
+
           </section>
       <!-- ======= Section III ======= -->
                 <!-- ======= Section III ======= -->
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                   <h2>III - Speaker views towards Brexit</h2>
                 </div>
-      
+
                 <!-- <h2>  III.1 Plot: Word clouds of the quotation :+ comment  </h2> -->
-      
-      
+
+
                   <div class="pngplot"><img src="plots/3_1_WordCloud.png" /></div>
 
                   <section id="about">
                       <div class="container">
                           <p>We see that Brexit and no deal are the most predominant words in the quote. Then comes prime minister, government, european union. We can also see some popular names such as Boris Johnson and Theresa May. Through this word cloud, we can actually say that the filtered quotes capture the topic of Brexit well and are consistent.</p>
                   </section>
-                  
+
                 <!-- <h2>  III.2 How many active speakers are mentioned? </h2> -->
-      
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_2_ActiveSpeakers.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
@@ -366,58 +366,58 @@
                       <div class="container">
                           <p>We can see that the most popular speaker is Theresa May, former Prime Minister. This is not surprising knowing that she was in the midst of this whole Brexit issue and did all her companionship around it. Next is the current Prime Minister, Boris Johnson, of the Conservative Party, who was also involved in the Brexit issue. In 19th spot we find Donald Trump , who was the President of the USA for most of the time studied. For more details on the speakers, their parties and their views, please refer to our topic analysis (LDA).</p>
                   </section>
-               
+
                 <!-- <h2>  III.3 How top 10 active speakers' sentiments changed over recent years?</h2> -->
-      
+
                   <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                       <iframe id="test" class="embed-responsive-item" src="plots/3_3_SpeOwer.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                     </div>
-                   
+
                     <section id="about">
                         <div class="container">
                             <p>We first notice the wide discrepancy between the amount of citations coming from the first two speakers compared to the remaining top 10 speakers. This difference must be even more drastic for the rest of the speakers. We can see that most of the quotes from Theresa May contain a positive sentiment towards the Brexit. While this may seem surprising, we see that Boris Johnson's quotes are mostly negative, but keep in mind that the sentiment analysis retained the overall sentiment of the quote, not the opinion on the Brexit.</p>
                     </section>
-                  
+
                 <!-- <h2>  III.4 How top 10 active speakers' sentiments changed over recent years? </h2> -->
-      
+
                 <section id="about">
                     <div class="container">
                         <p>For this section, please refer to the notebook LDA.ipynb, which contains the LDA analysis and the analysis of speakers that are for or against brexit. Note that seperated the notebooks because the LDA analysis requires older versions of packages which is not alligned with the rest of analysis.
-                    </section> 
+                    </section>
                  <!-- <h2>  III.5 Where do they come from? </h2> -->
-      
-      
+
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_5_ActSpeContry.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-      
+
                   <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                       <iframe id="test" class="embed-responsive-item" src="plots/3_5_wordmap.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                     </div>
-                    
+
                     <section id="about">
                         <div class="container">
                             <p>Again, we see that most of our speakers are from the UK, which is quite normal. Unlike the media, which was concentrated in Europe and the common wealth countries, the second most represented nationality is American. Then we find the European countries and some common wealth countries. One has also to note that the quotations have been extracted mostly from western media, thus the predominance of these regions in the statistics.</p>
-                      </section> 
+                      </section>
                     <!-- <h2>  III.6 How has the number of active speakers changed over the different periods of Brexits? </h2> -->
-      
-      
+
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_6_ActiveSpeOverTime.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-                  
+
                   <section id="about">
                       <div class="container">
                           <p>We can see that this graph follows the same trend as when analyzing the number of citations. Even though the two most active speakers, Theresa May and Boris Johnson, are heavily represented in the data set, they are not necessarily monopolizing the data as we can observe high and multiple peaks.
                               Notice also that after the referendum on 2016, the number of active speakers peaked.</p>
-                     </section> 
-                  
+                     </section>
+
                 <!-- ======= Section III-7 ======= -->
                 <!-- <h2>  III.7 What is their sentiment about the situation, content or not content, independently of their opinion on pro or against Brexit? </h2> -->
-      
-      
+
+
                   <div class="pngplot" ><img src="plots/3_7.png" /></div>
-      
+
                   <!-- <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                       <iframe id="test" class="embed-responsive-item" src="plots/3_7.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                     </div> -->
@@ -430,48 +430,48 @@
                                 <li> Tpolarities lower than 0.2 are considered negative.</li>
                                 <li>the rest is neutral.</li>
                             <ul>
-                          </ul> </section> 
+                          </ul> </section>
 
-                    
-                 
-      
+
+
+
                     <div class="pngplot" ><img src="plots/3_7_2.png" /></div>
-      
+
                     <section id="about">
                         <div class="container">
                             <p>We can see from the graph that most of the quotations are negative. They are followed by positive and finally not to far behind by neutral quotations.</p>
-                   </section>     
+                   </section>
                     <!-- ======= Section III-8 ======= -->
                 <!-- <h2>   III.8 Did they change their perception during this period? </h2> -->
-      
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_8_SentiOverYear.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-      
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_8_SentiOverTime.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-                  
+
                   <section id="about">
                       <div class="container">
                           <p>The distribution of the different emotions throughout time seem consistant, with the major part of the quotes being negative, and there's no sudden change in tone of the speech.</p>
-                     </section>  
-                  
-      
+                     </section>
+
+
                 <!-- ======= Section III-9 ======= -->
                 <!-- <h2>   III.9 How are the different sentiments of the speakers distributed by countries? </h2> -->
-      
+
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_9_sankey.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
                   <section id="about">
                   <div class="container">
                       <p>Here we see how the two nationalities and the work profession seen/have different feelings towards Brexit. We can see that most professions have a more negative sentiment. Trade unionist, a left wing party mainly from the UK and Ireland, are strongly negative towards Brexit. For journalists, this is still the case, but the split is fairly even between the three emotions. We can also see that most of the people represented coming from the UK are politicians, while in other countries like the US, there are mostly journalists. In addition to journalists and politicians, we can observe that soccer players are very active. This may be due to the fact that the selected data filters out England words for example and that data may contain information about soccer.</p>
-                  </section>  
-                  
-                
-      
-      
+                  </section>
+
+
+
+
 
     </section>
       <!-- ======= Services Section ======= -->
@@ -702,7 +702,7 @@
               </div>
               <!-- End testimonial item -->
 
-              
+
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <p>
