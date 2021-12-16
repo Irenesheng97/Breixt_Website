@@ -53,58 +53,60 @@
   </head>
 
   <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top header-transparent">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <h1 class="text-light">
-            <a href="index.html"><span>Topspot</span></a>
-          </h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
-            </li>
-            <li><a class="nav-link scrollto" href="#team">Team</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
-              ></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Topspot</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
-    </header>
-    <!-- End Header -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introduction</a></li>
+          <li class="dropdown"><a href="#media_coverage"><span>Research Questions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#media_coverage"><span>Media's Coverage</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#q1.1">When did the media start to mention Brexit? </a></li>
+                  <li><a href="#q1.2"> How did the number of quotations change over time?</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#media_view"><span>Media's Views</span><i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#q2.1">Which media have relayed the information the most?</a></li>
+                <li><a href="#q2.2">What is the country of origin of these media?</a></li>
+                <li><a href="#q2.3">What media/websites tend to have <br> positive/negative statements towards the situation?</a></li>
+                <li><a href="#q2.4">How sentiments of quotations revealed by <br> top 10 medias change over recent years? </a></li>
+              </ul>
+              </li>
+              <li class="dropdown"><a href="#speaker_view"><span>Speakers' Views</span><i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#q3.1">Title to be added</a></li>
+                  <li><a href="#q3.2">How many active speakers are mentioned? </a></li>
+                  <li><a href="#q3.3">How top 10 active speakers' sentiments <br> changed over recent years?</a></li>
+                  <li><a href="#q3.4">What are the main topics discussed?</a></li>
+                  <li><a href="#q3.5">Where do speakers come from? </a></li>
+                  <li><a href="#q3.6">How has the number of active speakers <br> changed over the different periods of Brexits</a></li>
+                  <li><a href="#q3.7">What are their sentiments about the Brexit?</a></li>
+                  <li><a href="#q3.8">Did they change their perceptions during this period?</a></li>
+                  <li><a href="#q3.9">How are the different sentiments of <br> the speakers distributed by countries?</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#quotes">Quotes</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -155,7 +157,7 @@
               <li>LDA Topic Modeling </li>
               To extract the country of the domain for further analysis, we appiled beatutiful soup to extract the infomation we needed in Country code top-level domain(ccTLD) page.
               <li>Spectral Clustering </li>
-              pectral clustering was applied for speakers and for different subclasses of occupation over time.
+              Spectral clustering was applied for speakers and for different subclasses of occupation over time.
               We first encoded the category features-nationality, polarity, and occupation-using two methods: hot encoding and target encoding. We then used the T-SNE method to compress the features and generate tsne_x,tesn_y so that they could be plotted in 2D or 3D graphs. We obtained some plots and results, but we will leave the final interpretation and more advanced implementation of the T-SNE approach to be done as a future improvement of our T-SNE method.
               You can find the first results, uncommented, of the cluster analysis at the end of this notebook
           </ul>
@@ -171,11 +173,47 @@
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                   <h2> I. Media's Coverage</h2>
                 </div>
+                <section id="counts" class="counts  section-bg">
+                  <div class="container">
+
+                    <div class="row no-gutters">
+
+                      <div class="col-lg-4 col-md-7 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                          <i class="bi bi-chat-left-quote"></i>
+                          <span data-purecounter-start="0" data-purecounter-end="115584257" data-purecounter-duration="1" class="purecounter"></span>
+                          <p><strong>All Quotes</strong> in Quotebank</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                          <i class="bi bi-chat-quote"></i>
+                          <span data-purecounter-start="0" data-purecounter-end="101878" data-purecounter-duration="1" class="purecounter"></span>
+                          <p><strong>Brexit-related Quotes</strong> for our analysis</p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+                        <div class="count-box">
+                          <i class="bi bi-people"></i>
+                          <span data-purecounter-start="0" data-purecounter-end="14456" data-purecounter-duration="1" class="purecounter"></span>
+                          <p><strong>Speakers</strong> related to Brexit</p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </section>
+                <!-- End Counts Section -->
                 <p>The original Quotebanks dataset contains 115,584,257 records. As described in the DataPreProcessing notebook, we initially extracted quotes that were solely about Brexit, the United Kingdom and/or the European Union. We then proceeded with filtering these records to consider only those containing one of the words from the following list: leave campaign and remain campaign, no deal, transition period, leave, withdral, referendum and split from as Brexit-related quotes.
 
-      As a result, we ended up with 101,878 Brexit-related citations for more in-depth analysis.</p>
+                  As a result, we ended up with 101,878 Brexit-related citations and 14,456 speakers who own Brexit-related quotations for more in-depth analysis.</p>
+
 
                   <!-- ======= Section I-2 ======= -->
+                  <section id="q1.1">
                   <h2> When did the media start to mention Brexit?</h2>
 
                   <div class="pngplot"><img src="plots/1_2.png" /></div>
@@ -184,7 +222,8 @@
       In order to further analyze this trend over the years, we look at what happens each year while looking at the dates that marked the Brexit.</p>
 
                   <!-- ======= Section I-3 ======= -->
-
+                </section>
+                <section id="q1.2">
                   <h2> How did the number of quotations change over time? </h2>
 
 
@@ -208,17 +247,20 @@
                   </ul>
                   <a href=" https://www.theweek.co.uk/100284/brexit-timeline-key-dates-in-the-uk-s-break-up-with-the-eu"><em>Souce of above keydates</em></a><br>
 
-                  On the graph, we can see that before the vote on June 23, 2016, the number of citations was very limited. The number started to increase until July 13, 2016, the day Theresa May became PM, before dropping again and entering a stationary phase. We anticipated seeing more dramatic variations in the number of quotes tying in with these specific dates, though we must keep in mind that the plot only considers data from Quotebank, which may not represent what is actually shared by all media outlets.
+                  <p>On the graph, we can see that before the vote on June 23, 2016, the number of citations was very limited. The number started to increase until July 13, 2016, the day Theresa May became PM, before dropping again and entering a stationary phase. We anticipated seeing more dramatic variations in the number of quotes tying in with these specific dates, though we must keep in mind that the plot only considers data from Quotebank, which may not represent what is actually shared by all media outlets.</p>
+                </section>
             </div>
       </section>
       <!-- ======= END Section I ======= -->
 
         <!-- ======= Section II ======= -->
+        <section id="media_view">
+        <div class="container">
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>II - Media views towards Brexit:</h2>
         </div>
-
-        <!-- <h2>II.1 Which media have relayed the information the most?</h2> -->
+        <section id="q2.1">
+        <h2>II.1 Which media have relayed the information the most?</h2>
 
         <div
           class="embed-responsive"
@@ -234,8 +276,7 @@
             width="100%"
           ></iframe>
         </div>
-        <section id="about">
-            <div class="container">
+
 
             <h3> Among the top medias we see:</h3>
              <ul>
@@ -249,9 +290,9 @@
                 <p>We will investigate/interested in looking at their emotion/view about the brexit later, most influencial media Sentiment Analysis</p>
 
               </ul>
-        </section>
-
-        <!-- <h2>II.2 What is the country of origin of these media?</h2> -->
+          </section>
+        <section id="q2.2">
+        <h2>II.2 What is the country of origin of these media?</h2>
 
         <div
           class="embed-responsive"
@@ -268,26 +309,19 @@
           ></iframe>
         </div>
 
-        <section id="about">
-            <div class="container">
 
              <ul>
-                <p>Only looking at the domains we could find that most domains are based in UK as we expected.
-                Scrapping the web page to get the domain countries using beautiful soup for future analysis
-              </p>
+                <li>
+                  Only looking at the domains we could find that most domains are based in UK as we expected.
+                  Scrapping the web page to get the domain countries using beautiful soup for future analysis.
+                </li>
                     <li>Note that to decide to which country each domain is assigned, we used the link that can be not always reliable since some domains can use .com ... (write smt about this)</li>
-
-
               </ul>
-        </section>
 
+            </section>
 
-
-        <!--
-        <h2>
-          II.3 What media and websites tend to have positive or negative
-          statements towards the situation?
-        </h2> -->
+        <section id="q2.3">
+        <h2>II.3 What media and websites tend to have positive or negative statements towards the situation?</h2>
 
         <div
           class="embed-responsive"
@@ -304,21 +338,15 @@
           ></iframe>
         </div>
 
-        <section id="about">
-            <div class="container">
-
             <p>We see that, when looking at the top 20 media present in the Quotebank data, most of them have a negative feeling about Brexit, independently about their views
-                Besides, most of these medieas are from uk, and hold mostly with negaattitudtive, espicially Daily Express(express.co.uk).
+                Besides, mossection-titledieas are from uk, and hold mostly with negaattitudtive, espicially Daily Express(express.co.uk).
                 It s suprising that most of views are neg when the brexit was still voted yes but we have to keep in mind it doesnt reflect the opinion
             </p>
 
         </section>
-
-
-        <!-- <h2>
-          II.4 How sentiments of quotations revealed by top 10 medias change over
-          recent years?
-        </h2> -->
+        <section id="q2.4">
+        <h2> II.4 How sentiments of quotations revealed by top 10 medias change over recent years?
+        </h2>
         <div
           class="embed-responsive"
           style="height: 600px; pading: 1em;"
@@ -333,58 +361,72 @@
             width="100%"
           ></iframe>
         </div>
-
-
-          <section id="about">
-              <div class="container">
                   <p>We can see that generally, the propostion between negative, positive and neutral feeling stayed consistant throughout the years.
                  We can nonetheless notice again that the number of quotes in 2020 always drop.</p>
-
+          </div>
+        </section>
           </section>
+
       <!-- ======= Section III ======= -->
                 <!-- ======= Section III ======= -->
+      <section id="speaker_view">
+        <div class="container">
                 <div class="section-title" data-aos="fade-in" data-aos-delay="100">
                   <h2>III - Speaker views towards Brexit</h2>
                 </div>
 
-                <!-- <h2>  III.1 Plot: Word clouds of the quotation :+ comment  </h2> -->
-
+                <section id="q3.1">
+                <h2>  III.1 : Title to be modified  </h2>
 
                   <div class="pngplot"><img src="plots/3_1_WordCloud.png" /></div>
 
-                  <section id="about">
-                      <div class="container">
                           <p>We see that Brexit and no deal are the most predominant words in the quote. Then comes prime minister, government, european union. We can also see some popular names such as Boris Johnson and Theresa May. Through this word cloud, we can actually say that the filtered quotes capture the topic of Brexit well and are consistent.</p>
-                  </section>
-
-                <!-- <h2>  III.2 How many active speakers are mentioned? </h2> -->
+                </section>
+                <section id="q3.2">
+                <h2>  III.2 How many active speakers are mentioned? </h2>
 
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_2_ActiveSpeakers.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-                  <section id="about">
-                      <div class="container">
-                          <p>We can see that the most popular speaker is Theresa May, former Prime Minister. This is not surprising knowing that she was in the midst of this whole Brexit issue and did all her companionship around it. Next is the current Prime Minister, Boris Johnson, of the Conservative Party, who was also involved in the Brexit issue. In 19th spot we find Donald Trump , who was the President of the USA for most of the time studied. For more details on the speakers, their parties and their views, please refer to our topic analysis (LDA).</p>
-                  </section>
 
-                <!-- <h2>  III.3 How top 10 active speakers' sentiments changed over recent years?</h2> -->
+                          <p>We can see that the most popular speaker is Theresa May, former Prime Minister. This is not surprising knowing that she was in the midst of this whole Brexit issue and did all her companionship around it. Next is the current Prime Minister, Boris Johnson, of the Conservative Party, who was also involved in the Brexit issue. In 19th spot we find Donald Trump , who was the President of the USA for most of the time studied. For more details on the speakers, their parties and their views, please refer to our topic analysis (LDA).</p>
+
+                </section>
+                <section id="q3.3">
+                <h2>  III.3 How top 10 active speakers' sentiments changed over recent years?</h2>
 
                   <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                       <iframe id="test" class="embed-responsive-item" src="plots/3_3_SpeOwer.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                     </div>
-
-                    <section id="about">
-                        <div class="container">
                             <p>We first notice the wide discrepancy between the amount of citations coming from the first two speakers compared to the remaining top 10 speakers. This difference must be even more drastic for the rest of the speakers. We can see that most of the quotes from Theresa May contain a positive sentiment towards the Brexit. While this may seem surprising, we see that Boris Johnson's quotes are mostly negative, but keep in mind that the sentiment analysis retained the overall sentiment of the quote, not the opinion on the Brexit.</p>
+
+                </section>
+                <section id="q3.4">
+                <h2>  III.4  What are the main topics discussed? (LDA analysis) </h2>
+
+
+                    <section id="LDA">
+                          <div class="embed-responsive" style="height:800px; pading:1em" id="lineChartEmbedDiv">
+                              <iframe id="test" class="embed-responsive-item" src="plots/3_7_LDA.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
+                            </div>
+
+                            <p>From the plot below we can notice the major topics keywords:
+
+    We can see that some of them are projecting the Brexit as an opportunity for a better change, and some of them are reflecting all the risks that may accure, stating words like (risk, damage, lose, crisis, impact etc..)
+    And also, we can see how some keywords are reflecting the will the stay in europe (partners, stay, deal, relationship, members etc)</p>
+
+
                     </section>
 
-                <!-- <h2>  III.4 How top 10 active speakers' sentiments changed over recent years? </h2> -->
+                    <div class="pngplot" ><img src="plots/3_4.jpeg" /></div>
+                          <p>The distribution of quotations through all speakers' nationality. This may be the result of the conflict of interest with the United Kingdom with all of these countries and may be directly affected by the Brexit decision.</p>
 
-                <section id="about">
-                    <div class="container">
-                        <p>For this section, please refer to the notebook LDA.ipynb, which contains the LDA analysis and the analysis of speakers that are for or against brexit. Note that seperated the notebooks because the LDA analysis requires older versions of packages which is not alligned with the rest of analysis.
-                    </section>
-                 <!-- <h2>  III.5 Where do they come from? </h2> -->
+
+                  <div class="pngplot" ><img src="plots/3_4_1.jpeg" /></div>
+                        <p>Taking only nationalities with more than 50 quotations.</p>
+                </section>
+                <section id="q3.5">
+                 <h2>  III.5 Where do they come from? </h2>
 
 
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
@@ -395,54 +437,49 @@
                       <iframe id="test" class="embed-responsive-item" src="plots/3_5_wordmap.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                     </div>
 
-                    <section id="about">
-                        <div class="container">
+
                             <p>Again, we see that most of our speakers are from the UK, which is quite normal. Unlike the media, which was concentrated in Europe and the common wealth countries, the second most represented nationality is American. Then we find the European countries and some common wealth countries. One has also to note that the quotations have been extracted mostly from western media, thus the predominance of these regions in the statistics.</p>
-                      </section>
-                    <!-- <h2>  III.6 How has the number of active speakers changed over the different periods of Brexits? </h2> -->
+                  </section>
+                  <section id="q3.6">
+                    <h2>  III.6 How has the number of active speakers changed over the different periods of Brexits? </h2>
 
 
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_6_ActiveSpeOverTime.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
 
-                  <section id="about">
-                      <div class="container">
+
                           <p>We can see that this graph follows the same trend as when analyzing the number of citations. Even though the two most active speakers, Theresa May and Boris Johnson, are heavily represented in the data set, they are not necessarily monopolizing the data as we can observe high and multiple peaks.
                               Notice also that after the referendum on 2016, the number of active speakers peaked.</p>
-                     </section>
 
+                </section>
                 <!-- ======= Section III-7 ======= -->
-                <!-- <h2>  III.7 What is their sentiment about the situation, content or not content, independently of their opinion on pro or against Brexit? </h2> -->
+                <section id="q3.7">
+                <h2>  III.7 What is their sentiment about the situation, content or not content, independently of their opinion on pro or against Brexit? </h2>
 
 
-                  <div class="pngplot" ><img src="plots/3_7.png" /></div>
+                  <div class="pngplot" width= 20%><img src="plots/3_7.png" /></div>
 
-                  <!-- <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
-                      <iframe id="test" class="embed-responsive-item" src="plots/3_7.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
-                    </div> -->
-                    <section id="about">
-                        <div class="container">
                             <p>We can see that the choice of threshold is not necesserly easy. When manually labeling the data, we trying on capturing the tone and overall emotion portrayed by the message, not the opinion on itself. It was not always simple and the results are subjective. After looking at the histograms and trying multiple options, we ended up picking the following thresholds:
                               </p>
                             <ul>
                                <li>polarities higher than 0.5 are considered positive.</li>
-                                <li> Tpolarities lower than 0.2 are considered negative.</li>
+                                <li>polarities lower than 0.2 are considered negative.</li>
                                 <li>the rest is neutral.</li>
                             <ul>
-                          </ul> </section>
+                          </ul>
 
 
 
 
                     <div class="pngplot" ><img src="plots/3_7_2.png" /></div>
 
-                    <section id="about">
-                        <div class="container">
+
                             <p>We can see from the graph that most of the quotations are negative. They are followed by positive and finally not to far behind by neutral quotations.</p>
-                   </section>
+                    </section>
                     <!-- ======= Section III-8 ======= -->
-                <!-- <h2>   III.8 Did they change their perception during this period? </h2> -->
+                  <section id="q3.8">
+                <h2>   III.8 Did they change their perception during this period? </h2>
 
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_8_SentiOverYear.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
@@ -452,389 +489,160 @@
                     <iframe id="test" class="embed-responsive-item" src="plots/3_8_SentiOverTime.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
 
-                  <section id="about">
-                      <div class="container">
+
                           <p>The distribution of the different emotions throughout time seem consistant, with the major part of the quotes being negative, and there's no sudden change in tone of the speech.</p>
-                     </section>
-
-
+                </section>
                 <!-- ======= Section III-9 ======= -->
-                <!-- <h2>   III.9 How are the different sentiments of the speakers distributed by countries? </h2> -->
+
+                <section id="q3.9">
+                <h2>   III.9 How are the different sentiments of the speakers distributed by countries? </h2>
 
                 <div class="embed-responsive" style="height:600px; pading:1em" id="lineChartEmbedDiv">
                     <iframe id="test" class="embed-responsive-item" src="plots/3_9_sankey.html" style="border: 0px;" scrolling="no" width="100%"></iframe>
                   </div>
-                  <section id="about">
-                  <div class="container">
+
                       <p>Here we see how the two nationalities and the work profession seen/have different feelings towards Brexit. We can see that most professions have a more negative sentiment. Trade unionist, a left wing party mainly from the UK and Ireland, are strongly negative towards Brexit. For journalists, this is still the case, but the split is fairly even between the three emotions. We can also see that most of the people represented coming from the UK are politicians, while in other countries like the US, there are mostly journalists. In addition to journalists and politicians, we can observe that soccer players are very active. This may be due to the fact that the selected data filters out England words for example and that data may contain information about soccer.</p>
                   </section>
-
-
-
-
+                </div>
 
     </section>
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="services">
-        <div class="container">
-          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-            <h2>Services</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
-          </div>
 
-          <div class="row">
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
-                </p>
-              </div>
-            </div>
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
-                </p>
-              </div>
-            </div>
+        <!-- ======= Testimonials Section ======= -->
+    <section id="quotes" class="testimonials section-bg">
+      <div class="container">
 
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
-            >
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Representative Quotations</h2>
         </div>
-      </section>
-      <!-- End Services Section -->
 
-      <!-- ======= Counts Section ======= -->
-      <section id="counts" class="counts section-bg">
-        <div class="container">
-          <div class="row no-gutters">
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <i class="bi bi-emoji-smile"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="232"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p><strong>Happy Clients</strong> consequuntur quae</p>
-              </div>
-            </div>
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <i class="bi bi-journal-richtext"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="521"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Let me be clear. Leaving Europe would threaten our economic and our national security. Those who want to leave Europe cannot tell you if British businesses would be able to access Europe's free trade single market or if working people's jobs are safe, or how much prices would rise. All they are offering is risk at a time of uncertainty -- a leap in the dark.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>David Cameron</h3>
+                <h4>Former Prime Minister of the United Kingdom</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <i class="bi bi-headset"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="1463"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  We are looking forward to Brexit with optimism. I Will Be Pushing For Brexit.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Boris Johnson</h3>
+                <h4>Prime Minister of the United Kingdom</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
 
-            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-              <div class="count-box">
-                <i class="bi bi-people"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="15"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Delighted that Boris Johnson supports Leave side and I hope he throws his full weight behind campaign to get UK out of the EU.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Nigel Farage</h3>
+                <h4>British broadcaster and former politician who was Leader of the UK Independence Party from 2006 to 2009 and 2010 to 2016 and Leader of the Brexit Party from 2019 to 2021</h4>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Official Treasury report says Brexit is bad.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>George Osborne</h3>
+                <h4>Former Chancellor of the Exchequer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I think there was a simple message from yesterday's elections to both us and the Labour Party -- `just get on and deliver Brexit.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Theresa May</h3>
+                <h4> Former Prime Minister of the United Kingdom and Leader of the Conservative Party from 2016 to 2019</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
-      <!-- End Counts Section -->
 
-      <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
-        <div class="container" data-aos="zoom-in">
-          <div class="text-center">
-            <h3>Call To Action</h3>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-            <a class="cta-btn" href="#">Call To Action</a>
-          </div>
-        </div>
-      </section>
-      <!-- End Cta Section -->
+      </div>
 
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials section-bg">
-        <div class="container">
-          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-            <h2>Testimonials</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
-          </div>
-
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse
-                    labore quem cillum quid cillum eram malis quorum velit fore
-                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                    culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore quem
-                    eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>
-              <!-- End testimonial item -->
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!-- End Testimonials Section -->
+    </section>
+    <!-- End Testimonials Section -->
 
       <!-- ======= Team Section ======= -->
       <section id="team" class="team">
-        <div class="container">
-          <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-            <h2>Team</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
-          </div>
+  <div class="container">
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="member" data-aos="fade-up">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h2>Our Team</h2>
+    </div>
 
-            <div class="col-lg-4 col-md-6">
-              <div class="member" data-aos="fade-up" data-aos-delay="150">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="row">
 
-            <div class="col-lg-4 col-md-6">
-              <div class="member" data-aos="fade-up" data-aos-delay="300">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="member" data-aos="fade-up">
+          <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Zineb Agnaou</h4>
           </div>
         </div>
-      </section>
-      <!-- End Team Section -->
-    </main>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+        <div class="member" data-aos="fade-up" data-aos-delay="150">
+          <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Jingrong Chen</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+        <div class="member" data-aos="fade-up" data-aos-delay="300">
+          <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Haoyu Sheng</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="member" data-aos="fade-up">
+          <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+          <div class="member-info">
+            <h4>Mahdi Ben Hassen</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End Team Section -->
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -844,18 +652,13 @@
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="footer-info">
-                <h3>Squadfree</h3>
+                <h3>Top-Spot</h3>
                 <p class="pb-3">
-                  <em
-                    >Qui repudiandae et eum dolores alias sed ea. Qui suscipit
-                    veniam excepturi quod.</em
-                  >
+                  <em>We are group of EPFL students who love ADA!</em>
                 </p>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  <strong>Project Repository:</strong>https://github.com/epfl-ada/ada-2021-project-top-spot<br />
+                  <strong>Course:</strong> ADA<br />
                 </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -876,64 +679,50 @@
             </div>
 
             <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+              <h4>Our Website</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#hero">Home</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#about">Introduction</a>
                 </li>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of service</a>
+                  <i class="bx bx-chevron-right"></i> <a href="#media_coverage">Research Questions</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
+                  <a href="#quotes">Quotes</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#team">Team</a>
                 </li>
               </ul>
             </div>
 
             <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Our Services</h4>
+              <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                  <i class="bx bx-chevron-right"></i> <a href="https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/">Web Template</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Web Development</a>
+                  <a href="https://zenodo.org/record/4277311#.YbucWSwo9QJ">Quotebank Dataset</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
+                  <a href="https://github.com/epfl-ada/ada-2021-project-top-spot">Project Repository</a>
                 </li>
               </ul>
             </div>
 
             <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Our Newsletter</h4>
+              <h4>Thank You Notes</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Thank you Akhil and Matthias, especially, Valentin for providing help throughout our project.
               </p>
-              <form action="" method="post">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </form>
             </div>
           </div>
         </div>
